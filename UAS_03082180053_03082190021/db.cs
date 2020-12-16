@@ -10,7 +10,7 @@ namespace UAS_03082180053_03082190021
   
     static class db
     {
-        public static OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\LENOVO LEGION\\source\\repos\\UAS_03082180053_03082190021\\03082180053_UAS_03082190021.accdb");
+        public static OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=03082180053_UAS_03082190021.accdb");
 
         public static void executeNonQuery(String sql)
         {

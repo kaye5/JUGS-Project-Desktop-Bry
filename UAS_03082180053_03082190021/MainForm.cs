@@ -13,12 +13,10 @@ namespace UAS_03082180053_03082190021
     public partial class MainForm : Form
     {
         HomeForm homePage;
-        StockForm stockPage;
         public MainForm()
         {
             InitializeComponent();
             homePage = new HomeForm();
-            stockPage = new StockForm();
             showPage(homePage,homeTab);
         }
 
@@ -45,6 +43,7 @@ namespace UAS_03082180053_03082190021
 
         void showPage(Form container,TabPage tabPage)
         {
+            tabPage.Controls.Clear();
             container.TopLevel = false;
             container.Visible = true;
             tabPage.Controls.Add(container);
